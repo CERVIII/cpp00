@@ -5,40 +5,42 @@
 #                                                     +:+ +:+         +:+      #
 #    By: pcervill <pcervill@student.42madrid.com    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
-#    Created: 2024/08/30 12:58:35 by pcervill          #+#    #+#              #
-#    Updated: 2024/08/30 17:56:06 by pcervill         ###   ########.fr        #
+#    Created: 2024/08/30 17:40:37 by pcervill          #+#    #+#              #
+#    Updated: 2024/08/30 17:53:17 by pcervill         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-NAME	= megaphone
+NAME	= phonebook
 
-SRC		= main.cpp
+SRC		= main.cpp Contact.cpp Phonebook.cpp
+
+SRC_DIR	= ./src/
+
+OBJ		= $(addprefix $(SRC_DIR), $(SRC:.cpp=.o))
 
 CC		= clang++
 
 CFLAGS	= -Wall -Wextra -Werror
 
-OBJ		= ${SRC:.cpp=.o}
-
-%.o:	%.cpp
+%.o: %.cpp
 	@$(CC) $(CFLAGS) -c $< -o $@
 
-all:	$(NAME)
+all: $(NAME)
 	@echo " \033[32m[ OK ] | $(NAME) ready! ✅\033[0m"
 
-$(NAME):	$(OBJ)
+$(NAME): $(OBJ)
 	@echo " \033[33m[ .. ] | Compiling $(NAME)... \033[0m"
 	@$(CC) $(CFLAGS) $(OBJ) -o $(NAME)
 
 clean:
 	@rm -f $(OBJ)
 
-fclean:	clean
+fclean: clean
 	@rm -f $(NAME)
 	@echo " \033[35m[ OK ] | $(NAME) fclean ready! 🧹\033[0m"
 
-re:	fclean all
+re: fclean all
 
-.PHONY:	all clean fclean re
+.PHONY: all clean fclean re
 
-.SILENT:	$(OBJ)
+.SILENT: $(OBJ)
