@@ -6,13 +6,13 @@
 #    By: pcervill <pcervill@student.42madrid.com    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/08/30 17:40:37 by pcervill          #+#    #+#              #
-#    Updated: 2024/08/30 17:53:17 by pcervill         ###   ########.fr        #
+#    Updated: 2024/09/17 18:57:21 by pcervill         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 NAME	= phonebook
 
-SRC		= main.cpp Contact.cpp Phonebook.cpp
+SRC		= main.cpp Contact.cpp PhoneBook.cpp
 
 SRC_DIR	= ./src/
 
