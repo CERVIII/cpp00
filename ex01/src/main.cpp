@@ -6,7 +6,7 @@
 /*   By: pcervill <pcervill@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/08/30 17:44:16 by pcervill          #+#    #+#             */
-/*   Updated: 2024/09/17 20:31:00 by pcervill         ###   ########.fr       */
+/*   Updated: 2024/09/18 15:40:42 by pcervill         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,14 +21,15 @@ int	main (void)
 	i = 0;
 	while (1)
 	{
-		std::cout << "Enter the comand: ADD, SEARCH or EXIT" << std::endl;
+		std::cout << "Enter the comand:" << std::endl;
+		std::cout << "1) ADD\n2) SEARCH\n3) EXIT" << std::endl;
 		std::getline(std::cin, command);
 		command.erase(0, command.find_first_not_of(" \t\v\f\r"));
 		while (isspace(command[command.length() - 1]))
 			command.erase(command.find_last_not_of(" \t\v\f\r") + 1, command[command.length() - 1]);
-		if (command == "EXIT")
+		if (command == "EXIT" || command == "3")
 			break;
-		else if (command == "ADD")
+		else if (command == "ADD" || command == "1")
 		{
 			if (i > 7)
 			{
@@ -57,10 +58,10 @@ int	main (void)
 				i++;
 			}
 		}
-		else if (command == "SEARCH")
-		{
+		else if (command == "SEARCH" || command == "2")
 			pb.search(pb);
-		}
+		else if (command.empty())
+			continue ;
 		else
 			std::cout << "Invalid command" << std::endl;
 	}

@@ -6,7 +6,7 @@
 /*   By: pcervill <pcervill@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/08/30 17:45:26 by pcervill          #+#    #+#             */
-/*   Updated: 2024/09/17 20:11:40 by pcervill         ###   ########.fr       */
+/*   Updated: 2024/09/18 12:55:19 by pcervill         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,6 +14,7 @@
 	# define PHONEBOOK_HPP
 
 # include "Contact.hpp"
+# include <iostream>
 
 class	PhoneBook
 {
@@ -26,7 +27,6 @@ class	PhoneBook
 		PhoneBook	add_contact(PhoneBook pb, int i);
 		PhoneBook	del_contact(PhoneBook pb);
 		void		search(PhoneBook pb);
-		
 };
 
 #endif

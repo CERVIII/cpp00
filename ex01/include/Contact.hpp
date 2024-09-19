@@ -6,7 +6,7 @@
 /*   By: pcervill <pcervill@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/08/30 17:45:22 by pcervill          #+#    #+#             */
-/*   Updated: 2024/09/17 20:15:56 by pcervill         ###   ########.fr       */
+/*   Updated: 2024/09/18 12:44:12 by pcervill         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,7 +30,7 @@ class Contact
 		~Contact();
 		Contact(std::string, std::string, std::string, std::string, std::string);
 		int isnull(Contact contact);
-		void print_contact();
+		void print_contact(Contact contact, int i);
 };
 
 #endif
