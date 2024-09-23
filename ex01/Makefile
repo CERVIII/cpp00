@@ -6,7 +6,7 @@
 #    By: pcervill <pcervill@student.42madrid.com    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/08/30 17:40:37 by pcervill          #+#    #+#              #
-#    Updated: 2024/09/17 18:57:21 by pcervill         ###   ########.fr        #
+#    Updated: 2024/09/23 15:39:29 by pcervill         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -20,7 +20,7 @@ OBJ		= $(addprefix $(SRC_DIR), $(SRC:.cpp=.o))
 
 CC		= clang++
 
-CFLAGS	= -Wall -Wextra -Werror
+CFLAGS	= -Wall -Wextra -Werror -std=c++98
 
 %.o: %.cpp
 	@$(CC) $(CFLAGS) -c $< -o $@

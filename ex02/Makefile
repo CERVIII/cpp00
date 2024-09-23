@@ -6,7 +6,7 @@
 #    By: pcervill <pcervill@student.42madrid.com    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/09/18 21:42:36 by pcervill          #+#    #+#              #
-#    Updated: 2024/09/18 21:47:51 by pcervill         ###   ########.fr        #
+#    Updated: 2024/09/23 15:39:43 by pcervill         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -18,7 +18,7 @@ OBJ		= $(SRC:.cpp=.o)
 
 CC		= clang++
 
-CFLAGS	= -Wall -Wextra -Werror
+CFLAGS	= -Wall -Wextra -Werror -std=c++98
 
 %.o: %.cpp
 	@$(CC) $(CFLAGS) -c $< -o $@
