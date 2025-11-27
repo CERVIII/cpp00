@@ -6,11 +6,11 @@
 /*   By: pcervill <pcervill@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/08/30 17:45:32 by pcervill          #+#    #+#             */
-/*   Updated: 2024/09/18 14:36:25 by pcervill         ###   ########.fr       */
+/*   Updated: 2025/11/27 11:35:12 by pcervill         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../include/Contact.hpp"
+#include "./Contact.hpp"
 
 Contact::Contact()
 {

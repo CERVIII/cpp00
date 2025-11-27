@@ -1,0 +1,3 @@
+*.o
+*subject*
+.DS_Store

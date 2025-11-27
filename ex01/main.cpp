@@ -6,11 +6,11 @@
 /*   By: pcervill <pcervill@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/08/30 17:44:16 by pcervill          #+#    #+#             */
-/*   Updated: 2024/09/18 15:40:42 by pcervill         ###   ########.fr       */
+/*   Updated: 2025/11/27 11:35:21 by pcervill         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../include/PhoneBook.hpp"
+#include "./PhoneBook.hpp"
 
 int	main (void)
 {

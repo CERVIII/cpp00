@@ -6,7 +6,7 @@
 #    By: pcervill <pcervill@student.42madrid.com    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/09/18 21:42:36 by pcervill          #+#    #+#              #
-#    Updated: 2024/09/23 15:39:43 by pcervill         ###   ########.fr        #
+#    Updated: 2025/11/27 11:58:40 by pcervill         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -16,7 +16,7 @@ SRC		= tests.cpp Account.cpp
 
 OBJ		= $(SRC:.cpp=.o)
 
-CC		= clang++
+CC		= c++
 
 CFLAGS	= -Wall -Wextra -Werror -std=c++98
 

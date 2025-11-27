@@ -6,15 +6,15 @@
 #    By: pcervill <pcervill@student.42madrid.com    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/08/30 12:58:35 by pcervill          #+#    #+#              #
-#    Updated: 2024/09/23 15:39:38 by pcervill         ###   ########.fr        #
+#    Updated: 2025/11/27 11:59:16 by pcervill         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 NAME	= megaphone
 
-SRC		= main.cpp
+SRC		= megaphone.cpp
 
-CC		= clang++
+CC		= c++
 
 CFLAGS	= -Wall -Wextra -Werror -std=c++98
 

@@ -6,7 +6,7 @@
 #    By: pcervill <pcervill@student.42madrid.com    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/08/30 17:40:37 by pcervill          #+#    #+#              #
-#    Updated: 2024/09/23 15:39:29 by pcervill         ###   ########.fr        #
+#    Updated: 2025/11/27 11:34:07 by pcervill         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -14,11 +14,9 @@ NAME	= phonebook
 
 SRC		= main.cpp Contact.cpp PhoneBook.cpp
 
-SRC_DIR	= ./src/
+OBJ		= $(SRC:.cpp=.o)
 
-OBJ		= $(addprefix $(SRC_DIR), $(SRC:.cpp=.o))
-
-CC		= clang++
+CC		= c++
 
 CFLAGS	= -Wall -Wextra -Werror -std=c++98
 
